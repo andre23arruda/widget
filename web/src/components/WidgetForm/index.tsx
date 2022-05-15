@@ -12,19 +12,19 @@ import FeedbackForm from './Steps/FeedbackForm'
 import FeedbackSuccess from './Steps/FeedbackSuccess'
 
 export const feedbacksList = {
-	bug: {
+	BUG: {
 		src: bugImage,
 		title: 'Problema',
 		alt: 'Imagem de um bug',
 		placeholder: 'Algo não está funcionando bem? Queremos corrigir. Conte com detalhes o que está acontecendo...'
 	},
-	idea: {
+	IDEA: {
 		src: ideaImage,
 		title: 'Ideia',
 		alt: 'Imagem de uma lâmpada',
 		placeholder: 'Teve uma ideia de melhoria ou de nova funcionalidade? Conta pra gente!'
 	},
-	other: {
+	OTHER: {
 		src: thoughtImage,
 		title: 'Outro',
 		alt: 'Imagem de uma nuvem de pensamento',

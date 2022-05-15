@@ -27,12 +27,29 @@ def put_ip_in_api_file(folder: str):
         f.truncate()
 
 
+def put_ip_in_env_file(folder: str, file_name='.env.local', file_pattern='API_URL'):
+    '''Put ip address in api.js'''
+
+    file_path = fr'../{ folder }/{ file_name }'
+
+    with open(file_path, 'r+') as f:
+        lines = f.readlines()
+        f.seek(0)
+
+        for line in lines:
+            if not line.startswith(file_pattern):
+                f.write(line)
+            else:
+                f.write(f'{ file_pattern }={ get_ip_address() }:{ PORT }\n')
+        f.truncate()
+
+
 def main():
     '''Run'''
     subprocess.call(f'python manage.py runserver { get_ip_address() }:{ PORT }', shell=True)
 
 
 if __name__ == '__main__':
-    # put_ip_in_api_file('web')
-    # put_ip_in_api_file('mobile')
+    put_ip_in_env_file('web', file_pattern='VITE_API_URL')
+    put_ip_in_api_file('mobile')
     main()

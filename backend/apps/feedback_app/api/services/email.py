@@ -14,7 +14,7 @@ def feedback_email(data: dict):
             '<div style="font-family: sans-serif; font-size=16px; color=#111">',
                 f'<p>Tipo do feedback: { data["type"] } </p>',
                 f'<p>Comentário: { data["description"] } </p>',
-                f'<img src="{ data["image"] }" height="500" width="500" />',
+                f'<img src="{ data["image"] }" height="500" />' if data["image"] else '',
             '</div>'
         ])
     )

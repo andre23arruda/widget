@@ -20,30 +20,10 @@ os.environ['ALLOWED_HOSTS'] = json.dumps(get_allowed_hosts())
 ## DATABASE
 os.environ['USE_SQLITE'] = 'true' # Empty string is False, else is True
 
-## djongo
-os.environ['DATABASES'] = '''{
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'db-name',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'mongodb+srv://<user>:<password>@cluster0.i33sy.mongodb.net/<db-name>?retryWrites=true&w=majority',
-        }
-    }
-}'''
-
-## postgres
-# 'default': {
-#     'ENGINE': 'django.db.backends.postgresql',
-#     'NAME': 'database_name',
-#     'USER': 'username',
-#     'PASSWORD': 'password',
-#     'HOST': 'localhost',
-# }
-
 os.environ['LANGUAGE_CODE'] = 'pt-br'
 os.environ['TIME_ZONE'] = 'America/Sao_Paulo'
 os.environ['AUTHOR'] = 'your name or email'
+os.environ['AUTHOR_EMAIL'] = 'your_email@gmail.com'
 
 # cors
 os.environ['CORS_ALLOWED_ORIGINS'] = [
@@ -56,16 +36,8 @@ os.environ['CLOUD_NAME'] = 'your_cloud_name'
 os.environ['API_KEY'] = 'your_api_key'
 os.environ['API_SECRET'] = 'your_api_secret'
 
-# aws keys
-os.environ['USE_S3'] = '' # Empty string is False, else is True
-os.environ['AWS_ACCESS_KEY_ID'] = f'*******'
-os.environ['AWS_SECRET_ACCESS_KEY'] = '*******'
-os.environ['AWS_STORAGE_BUCKET_NAME'] = 'your bucket name'
-
-# aws parameters to save files
-os.environ['AWS_STATIC_LOCATION'] = 'static'
-os.environ['AWS_PUBLIC_MEDIA_LOCATION'] = 'media/public'
-os.environ['AWS_PRIVATE_MEDIA_LOCATION'] = 'media/private'
-os.environ['STATICFILES_STORAGE'] = 'setup.storage_backends.StaticStorage'
-os.environ['DEFAULT_FILE_STORAGE'] = 'setup.storage_backends.PublicMediaStorage'
-os.environ['PRIVATE_FILE_STORAGE'] = 'setup.storage_backends.PrivateMediaStorage'
+# email
+os.environ['EMAIL_HOST'] = 'smtp.hueheu.io'
+os.environ['EMAIL_HOST_USER'] = 'host_user'
+os.environ['EMAIL_HOST_PASSWORD'] = 'host_password'
+os.environ['EMAIL_PORT'] = '1234'
