@@ -1,7 +1,9 @@
 // const API_URL = import.meta.env.API_URL
 
-const baseUrl = `http://${ import.meta.env.VITE_API_URL }/api/`
+const LOCAL = import.meta.env.VITE_LOCAL
+const baseUrl = `http${ LOCAL ? '' : 's'}://${ import.meta.env.VITE_API_URL }/api/`
 
+console.log(baseUrl)
 
 export async function postApi(route: string, formData: {}, auth='') {
     return fetch(
