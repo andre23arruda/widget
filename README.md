@@ -10,7 +10,9 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#instalação">Instalação</a>
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#telas">Telas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#exemplo">Exemplo</a>
 </p>
 
 ## 🚀 Tecnologias
@@ -130,3 +132,7 @@ expo start
     <img alt="Screen 4" title="Screen 4" src=".github/mobile_5.jpg" width="200px" />
 </div>
 <p align="center">Screen 3, Screen 4</p>
+
+
+## Exemplo
+<a href="https://andrearruda-widget.vercel.app/" target="_blank">Visitar</a>
