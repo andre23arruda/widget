@@ -27,6 +27,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 **Widget é uma ferramenta para submissão de feedbacks. Pode ser integrado em uma aplicação web ou mobile.**
+<div align="center">
+    <img alt="Models" title="Models" src=".github/feedback_app.png" width="200px" />
+</div>
+<p align="center">Models</p>
+<hr>
 
 ## Instalação
 ### Pré requisitos
